@@ -1,0 +1,228 @@
+.area-dashboard * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.area-dashboard {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #FFF9E3;
+  color: #1a1a1a;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.area-dashboard::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(90, 94, 39, 0.18) 0%, transparent 55%),
+    radial-gradient(circle at 80% 70%, rgba(100, 0, 23, 0.12) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.area-dashboard .header {
+  background: #000000;
+  padding: 25px 30px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 5px solid #000000;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.area-dashboard .header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  pointer-events: none;
+}
+
+.area-dashboard .header:hover {
+  box-shadow: 0 12px 32px rgba(28, 46, 74, 0.4), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.area-dashboard .header h2 {
+  color: #FFFFFF;
+  font-size: 28px;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.area-dashboard .header p {
+  color: #FFFFFF;
+  font-size: 14px;
+  opacity: 0.95;
+  letter-spacing: 0.01em;
+}
+
+.area-dashboard .dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.area-dashboard .dashboard-card {
+  background: #FFFFFF;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 4px solid #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.area-dashboard .dashboard-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(180deg, rgba(82, 103, 125, 0.06) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.area-dashboard .dashboard-card:hover {
+  transform: translateY(-5px);
+  background: #FFFBE6;
+  box-shadow: 0 12px 32px rgba(244, 204, 0, 0.45), 0 4px 12px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  border-color: #F4CC00;
+}
+
+.area-dashboard .dashboard-card:active {
+  transform: translateY(-2px);
+}
+
+.area-dashboard .card-icon {
+  width: 50px;
+  height: 50px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.area-dashboard .dashboard-card:hover .card-icon {
+  transform: scale(1.05);
+  background: #F4CC00;
+  box-shadow: 0 6px 16px rgba(244, 204, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.area-dashboard .card-icon svg {
+  width: 26px;
+  height: 26px;
+  fill: #000000;
+}
+
+.area-dashboard .card-title {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.area-dashboard .card-value {
+  color: #1a1a1a;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.area-dashboard .card-description {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.area-dashboard .quick-actions {
+  background: #FFFFFF;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.area-dashboard .quick-actions h3 {
+  color: #1a1a1a;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #000000;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.area-dashboard .action-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.area-dashboard .action-btn {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background: #000000;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border: 1px solid #000000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.02em;
+}
+
+.area-dashboard .action-btn:hover {
+  background: #F4CC00;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-color: #000000;
+}
+
+.area-dashboard .action-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(28, 46, 74, 0.25), inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.area-dashboard .action-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(244, 204, 0, 0.55);
+}
+
+.area-dashboard .action-btn svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  fill: currentColor;
+  transition: transform 0.2s ease;
+}
+
+.area-dashboard .action-btn:hover svg {
+  transform: translateX(2px);
+}

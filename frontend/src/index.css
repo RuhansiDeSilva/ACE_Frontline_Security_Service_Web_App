@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode - Black & Gold Theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --background: 48 33% 97%;
+    --foreground: 48 20% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 48 97% 52%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 0 0% 10%;
+    --accent-foreground: 48 97% 52%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 48 97% 52%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 48 97% 52%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 48 97% 52%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 48 97% 52%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --badge-excellent: 142 76% 36%;
+    --badge-good: 0 0% 10%;
+    --badge-valid: 142 76% 36%;
+    --badge-expiring: 48 97% 52%;
+
+    --charcoal: 0 0% 10%;
+    --charcoal-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    /* Dark Mode - Black & Gold Theme */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 48 97% 52%;
+    --primary-foreground: 0 0% 8%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 95%;
+    --accent-foreground: 0 0% 8%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 15%;
+    --ring: 48 97% 52%;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 48 97% 52%;
+    --sidebar-primary-foreground: 0 0% 8%;
+    --sidebar-accent: 48 97% 52%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 48 97% 52%;
+
+    --success: 142 76% 42%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --badge-excellent: 142 76% 42%;
+    --badge-good: 0 0% 95%;
+    --badge-valid: 142 76% 42%;
+    --badge-expiring: 48 97% 52%;
+
+    --charcoal: 0 0% 10%;
+    --charcoal-foreground: 0 0% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-display;
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-semibold;
+  }
+}
+
+@layer utilities {
+  .client-portal-shell.dark :is(.text-gray-900, .text-gray-800, .text-gray-700) {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .client-portal-shell.dark :is(.text-gray-600, .text-gray-500, .text-gray-400) {
+    color: hsl(var(--muted-foreground)) !important;
+  }
+
+  .client-portal-shell.dark :is(.bg-white, .bg-gray-50) {
+    background-color: hsl(var(--card)) !important;
+  }
+
+  .client-portal-shell.dark :is(.border-gray-100, .border-gray-200) {
+    border-color: hsl(var(--border)) !important;
+  }
+}

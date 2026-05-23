@@ -1,0 +1,91 @@
+.area-monthly .chairman-monthly-modal {
+  max-width: 860px;
+}
+
+.area-monthly .chairman-monthly-header {
+  padding: 20px 24px 14px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.area-monthly .chairman-monthly-header h3 {
+  padding: 0;
+  border-bottom: none;
+  margin: 0 0 10px;
+}
+
+.area-monthly .chairman-monthly-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.area-monthly .chairman-monthly-generated {
+  color: #4b5563;
+  font-size: 13px;
+}
+
+.area-monthly .chairman-monthly-body {
+  padding: 18px 24px 10px;
+  overflow-y: auto;
+}
+
+.area-monthly .chairman-monthly-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.area-monthly .chairman-monthly-meta-item {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.area-monthly .chairman-monthly-meta-label {
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.area-monthly .chairman-monthly-meta-value {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.area-monthly .chairman-monthly-section {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.area-monthly .chairman-monthly-section h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #111827;
+}
+
+.area-monthly .chairman-monthly-section p {
+  margin: 0;
+  line-height: 1.6;
+  color: #1f2937;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.area-monthly .chairman-monthly-actions {
+  padding: 12px 24px 20px;
+  border-top: 1px solid #e5e7eb;
+  justify-content: flex-end;
+}
