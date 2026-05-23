@@ -38,7 +38,7 @@ import {
     ChevronRight
 } from "lucide-react";
 import { format, setMonth as setDateMonth, setYear, startOfMonth, endOfMonth, subMonths, getDate } from "date-fns";
-import logo from "@/assets/logo.png";
+// import logo from "@/assets/logo.png"; // Logo removed for public repo
 
 interface Officer {
     id: number;
@@ -328,7 +328,7 @@ const GeneratePayroll = ({ onSuccess }: { onSuccess?: () => void }) => {
             {/* Page Header */}
             <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-4">
-                    <img src={logo} alt="Project Logo" className="h-12 w-auto object-contain" />
+                    {/* Logo image removed for public repo */}
                     <div>
                         <h1 className="text-2xl font-bold tracking-tight text-neutral-800 uppercase">Generate Payroll</h1>
                         <p className="text-xs text-muted-foreground uppercase tracking-wider">Payroll Administration Module</p>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { feedbackApi } from "@/lib/api";
 import { Star, Shield, ArrowLeft, Search, Filter } from "lucide-react";
-import logoImage from "@/assets/logo.png";
+// import logoImage from "@/assets/logo.png"; // Logo removed for public repo
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
@@ -75,7 +75,7 @@ const FeedbackAllPage = () => {
             <header className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
                     <Link to="/" className="flex items-center gap-2.5">
-                        <img src={logoImage} alt="Ace Front Line" className="h-8 w-8 rounded-full" />
+                        {/* Logo removed */}
                         <span className="font-black text-gray-900 text-base">Ace Front Line</span>
                     </Link>
                     <Link

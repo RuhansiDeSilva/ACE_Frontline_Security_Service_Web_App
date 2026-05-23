@@ -54,7 +54,7 @@ import {
     Legend
 } from "recharts";
 import { format, setMonth as setDateMonth, setYear, isWithinInterval, parse } from "date-fns";
-import logo from "@/assets/logo.png";
+// import logo from "@/assets/logo.png"; // Logo removed for public repo
 import { toast } from "sonner";
 import { api } from "@/services/api";
 
@@ -302,7 +302,7 @@ const SalaryTrends = () => {
             {/* Page Header */}
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                    <img src={logo} alt="Project Logo" className="h-12 w-auto object-contain" />
+                    {/* Logo removed */}
                     <div>
                         <h1 className="text-2xl font-black tracking-tight text-neutral-800 uppercase">Salary Trends</h1>
                         <p className="text-[10px] text-muted-foreground uppercase font-black tracking-widest">Analyze salary patterns and track earnings</p>

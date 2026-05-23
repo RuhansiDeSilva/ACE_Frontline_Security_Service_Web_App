@@ -32,7 +32,7 @@ import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { Check, X, CreditCard, Calendar } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.png";
+// import logo from "@/assets/logo.png"; // Logo removed for public repo
 
 interface Officer {
     fullName: string;
@@ -230,11 +230,7 @@ const AdvanceRequests = ({ role }: AdvanceRequestsProps) => {
         <div className="space-y-6">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                    <img
-                        src={logo}
-                        alt="Ace Front Line"
-                        className="h-12 w-auto object-contain"
-                    />
+                    {/* Logo removed */}
                     <div>
                         <h1 className="text-2xl font-black tracking-tight text-neutral-800 uppercase leading-none">
                             Advance Requests

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence, useMotionValue, useTransform, animate, Variants } from "framer-motion";
 import { useState, useEffect } from "react";
 import { feedbackApi } from "@/lib/api";
-import logoImage from "@/assets/logo.png";
+// import logoImage from "@/assets/logo.png"; // Logo removed for public repo
 import heroImage from "@/assets/hero-security.jpg";
 import companyProfile from "@/assets/company-profile.png";
 import teamPhoto from "@/assets/team-photo.jpg";
@@ -38,34 +38,32 @@ const services = [
 ];
 
 const clients = [
-  "CKT Apparel (Pvt) Ltd", "Hirdaramani Industries (Pvt) Ltd", "Hela Clothing (Pvt) Ltd",
-  "Hela Intimates", "Foundation Garments (Pvt) Ltd", "Jinadasa Bennett (Pvt) Ltd",
-  "Brandix Intimates Centre", "Sway Global Holdings (Pvt) Ltd", "Miami Clothing (Pvt) Ltd",
-  "Associated CEAT (Private) Limited", "Eu-Retec (Pvt) Limited", "Workwear Lanka (Pvt) Ltd",
-  "Midas Safety Lanka (Pvt) Ltd", "Snackings (Pvt) Ltd", "Lalan Rubbers (Pvt) Ltd",
-  "Central Rubbers (Pvt) Ltd", "Lalan Energy Solutions (Pvt) Ltd", "Lalan Printing & Packaging (Pvt) Ltd",
-  "Lalan Engineering Services (Pvt) Ltd", "Hivetz Nutri (Pvt) Ltd", "C W Mackie PLC",
-  "Suntea (Pvt) Ltd", "Boehm Leckner Multi Moulds (Pvt) Ltd", "Micro Cars (Pvt) Ltd",
-  "Wecare Hospital", "New May Fashion (Pvt) Ltd", "Sumanasekera Supermarket",
-  "Institution of Incorporated Engineers Sri Lanka", "Ebony Holdings (Pvt) Ltd",
-  "Kushmi Foods & Catering", "Buddhist Ladies College", "Incubate Labs",
-  "Coco Fresh (Pvt) Ltd", "Ravi Breeding Farm", "Artisans H K (Pvt) Ltd",
-  "Prasad Fashion", "Colombo City Centre Residences", "LANKASEAL (PVT) LTD",
-  "Tasma International Multi Services (Pvt) Ltd", "S & S Clothing (Pvt) Ltd",
-  "Senura Civil Engineering (Pvt) Ltd", "Ceylon Biscuits Limited",
-  "JF & I Packaging (Pvt) Ltd",
+  "Acme Manufacturing Group", "Apex Logistics Solutions", "Aurora Tech Services",
+  "Blue Horizon Enterprises", "Capital Building Systems", "Clearwater Industries",
+  "Compass Distribution", "Crescent Energy Corp", "Delta Security Services",
+  "Emerald Commerce Ltd", "Epsilon Development Co", "Falcon Industrial Works",
+  "Fusion Technology Labs", "Granite Construction", "Guardian Financial Group",
+  "Harmony Health Solutions", "Horizon Trade Partners", "Ignite Ventures Inc",
+  "Infinity Retail Corp", "Jacomax Electronics", "Keystone Operations",
+  "Lambda Manufacturing", "Liberty Supply Chain", "Luminant Solutions Inc",
+  "Matrix Global Services", "Nexus Innovations", "Omega Industries Ltd",
+  "Paramount Group Holdings", "Quest Global Enterprises", "Radiant Energy Systems",
+  "Stellar Logistics", "Titan Commercial Services", "Unity Healthcare Network",
+  "Vanguard Distribution", "Vertex Engineering", "Victory Trade Partners",
+  "Vigor Manufacturing", "Wavelength Communications", "Zenith Capital Group",
+  "Zephyr Development", "Pinnacle Systems Corp",
 ];
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const TESTIMONIALS_PER_PAGE = 3;
 
 const FALLBACK_TESTIMONIALS = [
-  { name: "Hirdaramani Group", role: "Apparel Industry Client", quote: "Ace Front Line provides exceptional security services across our multiple factory locations. Their ex-military personnel bring unmatched professionalism and discipline.", rating: 5 },
-  { name: "Brandix Intimates", role: "Manufacturing Client", quote: "The reliability and training standards of Ace Front Line's security officers have significantly improved our facility security. Their 24/7 commitment is outstanding.", rating: 5 },
-  { name: "CEAT Kelani", role: "Industrial Client", quote: "Their comprehensive approach to security, combining manned guarding with electronic surveillance, gives us complete peace of mind for our operations.", rating: 5 },
-  { name: "Ceylon Biscuits Limited", role: "FMCG Client", quote: "Ace Front Line has been instrumental in maintaining the security standards at our facilities. Their officers are well-trained, punctual, and always professional.", rating: 5 },
-  { name: "Colombo City Centre", role: "Real Estate Client", quote: "The security team provided by Ace Front Line for our residential complex is exemplary. Residents feel safe and well-protected around the clock.", rating: 5 },
-  { name: "Buddhist Ladies College", role: "Education Client", quote: "We trust Ace Front Line with the safety of our students and staff. Their guards are courteous, vigilant, and highly dependable.", rating: 5 },
+  { name: "Apex Logistics Solutions", role: "Manufacturing Client", quote: "Ace Front Line provides exceptional security services across our multiple facility locations. Their ex-military personnel bring unmatched professionalism and discipline.", rating: 5 },
+  { name: "Granite Construction", role: "Construction Client", quote: "The reliability and training standards of Ace Front Line's security officers have significantly improved our facility security. Their 24/7 commitment is outstanding.", rating: 5 },
+  { name: "Delta Security Services", role: "Industrial Client", quote: "Their comprehensive approach to security, combining manned guarding with electronic surveillance, gives us complete peace of mind for our operations.", rating: 5 },
+  { name: "Guardian Financial Group", role: "Finance Client", quote: "Ace Front Line has been instrumental in maintaining the security standards at our facilities. Their officers are well-trained, punctual, and always professional.", rating: 5 },
+  { name: "Luminant Solutions Inc", role: "Corporate Client", quote: "The security team provided by Ace Front Line for our corporate complex is exemplary. Employees feel safe and well-protected around the clock.", rating: 5 },
+  { name: "Harmony Health Solutions", role: "Healthcare Client", quote: "We trust Ace Front Line with the safety of our staff and patients. Their guards are courteous, vigilant, and highly dependable.", rating: 5 },
 ];
 
 const fadeInUp: any = {
@@ -187,7 +185,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between gap-4">
             <Link to="/" className="flex items-center gap-3">
-              <img src={logoImage} alt="Ace Front Line Logo" className="h-10 w-10 rounded-full" />
+              {/* Logo image removed for public repo */}
               <div className="flex flex-col leading-none">
                 <span className="text-lg font-extrabold tracking-tight uppercase text-foreground">Ace Front Line</span>
                 <span className="text-[10px] tracking-[0.2em] font-medium text-muted-foreground uppercase">Security Solutions</span>
@@ -490,10 +488,10 @@ const Index = () => {
 
               <div className="space-y-6">
                 {[
-                  { icon: Phone, title: "Phone", details: "0114848177 / 0112867359", subtitle: "Available 24/7" },
-                  { icon: Mail, title: "Email", details: "acefrontline@gmail.com", subtitle: "Response within 24 hours" },
-                  { icon: Facebook, title: "Facebook", details: "Ace Front Line", href: "https://www.facebook.com/acefrontline/", subtitle: "Follow our updates" },
-                  { icon: MapPin, title: "Head Office", details: "189/2, Sandatenna Mawatha, Battaramulla", subtitle: "Open Mon-Sat" },
+                  { icon: Phone, title: "Phone", details: "+1 (555) 123-4567 / +1 (555) 123-4568", subtitle: "Available 24/7" },
+                  { icon: Mail, title: "Email", details: "company123@gmail.com", subtitle: "Response within 24 hours" },
+                  { icon: Facebook, title: "Facebook", details: "Security Solutions", href: "https://www.facebook.com/", subtitle: "Follow our updates" },
+                  { icon: MapPin, title: "Head Office", details: "123 Business Street, Suite 100, New York, NY 10001", subtitle: "Open Mon-Sat" },
                 ].map((item, i) => (
                   <motion.div key={i} variants={fadeInUp} className="flex items-center gap-6 group">
                     <div className="size-14 rounded-xl bg-secondary flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all shrink-0">

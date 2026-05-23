@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
-import logoImage from "@/assets/logo.png";
+// import logoImage from "@/assets/logo.png"; // Logo removed for public repo
 import heroImage from "@/assets/hero-security.jpg";
 
 interface Vacancy {
@@ -254,7 +254,7 @@ const Careers = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
             <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity flex-shrink-0">
-              <img src={logoImage} alt="Ace Front Line Logo" className="h-12 w-12 rounded-full" />
+              {/* Logo image removed for public repo */}
               <div className="flex flex-col leading-none">
                 <span className="text-sm font-extrabold tracking-tight uppercase text-black dark:text-white">Ace Front Line</span>
                 <span className="text-[9px] tracking-[0.15em] font-semibold text-gray-600 dark:text-gray-400 uppercase">Security Solutions</span>
@@ -614,7 +614,7 @@ const Careers = () => {
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto p-0">
           {/* Dialog Header */}
           <div className="bg-[#1A1A1B] px-6 py-5 text-center rounded-t-lg">
-            <img src={logoImage} alt="Logo" className="h-12 w-12 rounded-full mx-auto mb-2" />
+            {/* Logo image removed for public repo */}
             <DialogHeader className="space-y-1">
               <DialogTitle className="text-xl font-bold text-white tracking-wide">Security Officer Application Form</DialogTitle>
               <DialogDescription className="text-[#FFD700]/70 text-xs">

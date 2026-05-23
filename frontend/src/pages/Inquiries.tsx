@@ -10,7 +10,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import OfficerRoleSelector from "@/components/OfficerRoleSelector";
-import logoImage from "@/assets/logo.png";
+// import logoImage from "@/assets/logo.png"; // Logo removed for public repo
 
 const Inquiries = () => {
   const { toast } = useToast();
@@ -209,7 +209,7 @@ const Inquiries = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
             <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity flex-shrink-0">
-              <img src={logoImage} alt="Ace Front Line Logo" className="h-12 w-12 rounded-full" />
+              {/* Logo removed */}
               <div className="flex flex-col leading-none">
                 <span className="text-sm font-extrabold tracking-tight uppercase text-black dark:text-white">Ace Front Line</span>
                 <span className="text-[9px] tracking-[0.15em] font-semibold text-gray-600 dark:text-gray-400 uppercase">Security Solutions</span>
@@ -268,7 +268,7 @@ const Inquiries = () => {
               </div>
               <div className="text-left">
                 <p className="text-xs text-muted-foreground font-medium">Call Us</p>
-                <p className="text-sm font-bold">0114848177</p>
+                <p className="text-sm font-bold">+1 (555) 123-4567</p>
               </div>
             </div>
             <div className="flex items-center gap-3 bg-card/50 dark:bg-white/10 backdrop-blur-md p-4 rounded-xl border border-border dark:border-white/10 shadow-sm">
@@ -277,7 +277,7 @@ const Inquiries = () => {
               </div>
               <div className="text-left">
                 <p className="text-xs text-muted-foreground font-medium">Email</p>
-                <p className="text-sm font-bold">acefrontline@gmail.com</p>
+                <p className="text-sm font-bold">company123@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center gap-3 bg-card/50 dark:bg-white/10 backdrop-blur-md p-4 rounded-xl border border-border dark:border-white/10 shadow-sm">
@@ -298,7 +298,7 @@ const Inquiries = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary hover:text-foreground transition-colors text-sm font-semibold"
             >
-              <MapPin className="h-4 w-4" /> 189/2, Sandatenna Mawatha, Battaramulla - View on Map
+              <MapPin className="h-4 w-4" /> 123 Business Street, Suite 100, New York, NY 10001 - View on Map
             </a>
           </div>
 
@@ -606,10 +606,10 @@ const Inquiries = () => {
           <h3 className="text-2xl font-bold mb-3">Need Immediate Assistance?</h3>
           <p className="text-primary/60 mb-6">Our operations team is available around the clock for urgent security needs.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:0114848177" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/80 text-[#1A1A1B] px-6 py-3 rounded-lg font-bold transition-colors">
-              <Phone className="h-5 w-5" /> Call Now
+            <a href="tel:+15551234567" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/80 text-[#1A1A1B] px-6 py-3 rounded-lg font-bold transition-colors">
+              <Phone className="h-5 w-5" /> Call Us
             </a>
-            <a href="mailto:acefrontline@gmail.com" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg font-bold transition-colors border border-primary/40">
+            <a href="mailto:company123@gmail.com" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg font-bold transition-colors border border-primary/40">
               <Mail className="h-5 w-5" /> Email Us
             </a>
           </div>

@@ -6,7 +6,7 @@ import {
   notificationService,
   type NotificationItem,
 } from "@/services/notificationService";
-import logoImage from "@/assets/logo.png";
+// import logoImage from "@/assets/logo.png"; // Logo removed for public repo
 
 interface DashboardHeaderProps {
   userName: string;
@@ -101,7 +101,7 @@ export default function DashboardHeader({
         {/* Logo & Brand with Date/Time */}
         <div className="flex items-center gap-4">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logoImage} alt="Ace Front Line Logo" className="h-9 w-9 rounded-full" />
+            {/* Logo removed */}
             <div className="hidden sm:flex flex-col leading-none">
               <span className="text-[17px] font-extrabold tracking-tight uppercase text-foreground">
                 Ace Front Line

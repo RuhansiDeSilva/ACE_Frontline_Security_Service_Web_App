@@ -24,7 +24,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
-import logo from "@/assets/logo.png";
+// import logo from "@/assets/logo.png"; // Logo removed for public repo
 
 export interface PayrollDetail {
     id: number;
@@ -179,7 +179,7 @@ export const PayslipDetailContent = ({ id, onBack, showEdit = true }: { id: numb
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center relative z-10 gap-6">
                             <div className="flex items-center gap-5">
                                 <div className="bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/20">
-                                    <img src={logo} alt="Ace Logo" className="h-12 w-auto object-contain" />
+                                    {/* Logo removed */}
                                 </div>
                                 <div>
                                     <h1 className="text-2xl font-black uppercase tracking-tight text-white">Ace Front Line</h1>

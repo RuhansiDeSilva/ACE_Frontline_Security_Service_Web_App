@@ -50,7 +50,7 @@ import {
 import { toast } from "sonner";
 import { format, parseISO } from "date-fns";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.png";
+// import logo from "@/assets/logo.png"; // Logo removed for public repo
 
 interface SalaryRecord {
     id: string;
@@ -280,14 +280,7 @@ const PayrollRecords = () => {
             {/* Header Redesign to match SalaryTrends style */}
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                    <img
-                        src={logo}
-                        alt="Ace Front Line"
-                        className="h-12 w-auto object-contain"
-                        onError={(e) => {
-                            e.currentTarget.src = "https://cdn-icons-png.flaticon.com/512/1053/1053155.png";
-                        }}
-                    />
+                    {/* Logo removed */}
                     <div>
                         <div className="flex items-center gap-4">
                             <h1 className="text-2xl font-black tracking-tight text-neutral-800 uppercase leading-none">

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { extractUserRole } from "@/lib/roleUtils";
 import { ValidationRules } from "@/lib/validationHelpers";
-import logoImage from "@/assets/logo.png";
+// import logoImage from "@/assets/logo.png"; // Logo removed for public repo
 import { authService } from "@/services/authService";
 
 const roles = [
@@ -175,7 +175,7 @@ const StaffLogin = () => {
     <div className="min-h-screen bg-background flex items-center justify-center px-4 py-12">
       <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="w-full max-w-lg">
         <div className="text-center mb-8">
-          <img src={logoImage} alt="Ace Front Line Logo" className="h-24 w-24 mx-auto mb-4 rounded-full shadow-lg" />
+          {/* Logo removed */}
           <h1 className="text-4xl font-black text-foreground mb-2">Staff Login</h1>
           <p className="text-muted-foreground text-lg">Select your role and sign in</p>
         </div>

@@ -176,7 +176,7 @@ export default function LoginPortal() {
     <div className="min-h-screen flex items-center justify-center bg-background">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <div className="flex flex-col items-center mb-6">
-          <img src={logo} alt="Login Logo" className="w-24 h-24 mb-4" />
+          {/* Logo removed */}
           <h1 className="text-2xl font-bold text-gray-800">Welcome Back</h1>
           <p className="text-gray-600">Select your login type to continue</p>
         </div>

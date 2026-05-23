@@ -23,7 +23,7 @@ import {
     Loader2,
     Search
 } from "lucide-react";
-import logo from "@/assets/logo.png";
+// import logo from "@/assets/logo.png"; // Logo removed for public repo
 import { PayslipDetailContent } from "./PayslipDetail";
 import { toast } from "sonner";
 
@@ -161,9 +161,7 @@ const MyPayslips = ({ mode = "history" }: MyPayslipsProps) => {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 bg-white p-8 rounded-3xl shadow-sm border border-neutral-100 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-3xl"></div>
                 <div className="flex items-center gap-5">
-                    <div className="bg-neutral-50 p-3 rounded-2xl border border-neutral-100 shadow-inner">
-                        <img src={logo} alt="Ace Logo" className="h-12 w-auto object-contain" />
-                    </div>
+                    {/* Logo image removed for public repo */}
                     <div className="space-y-1">
                         <h1 className="text-3xl font-black tracking-tight text-neutral-800 uppercase">{pageTitle}</h1>
                         <p className="text-sm font-medium text-muted-foreground flex items-center gap-2">

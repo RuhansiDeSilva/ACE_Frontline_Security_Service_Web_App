@@ -14,7 +14,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import logoImage from "@/assets/logo.png";
+// import logoImage from "@/assets/logo.png"; // Logo removed for public repo
 
 // ── Constants ───────────────────────────────────────────────────────────────
 
@@ -297,7 +297,7 @@ const AIRiskAssessment = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex h-20 items-center justify-between">
                         <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity flex-shrink-0">
-                            <img src={logoImage} alt="Ace Front Line Logo" className="h-12 w-12 rounded-full" />
+                            {/* Logo image removed for public repo */}
                             <div className="flex flex-col leading-none">
                                 <span className="text-sm font-extrabold tracking-tight uppercase text-black dark:text-white">Ace Front Line</span>
                                 <span className="text-[9px] tracking-[0.15em] font-semibold text-gray-600 dark:text-gray-400 uppercase">Security Solutions</span>
@@ -768,7 +768,7 @@ const AIRiskAssessment = () => {
                     <h3 className="text-2xl font-bold mb-3">Need a Professional Security Survey?</h3>
                     <p className="text-[#FFD700]/60 mb-6">Our team can visit your site for a comprehensive security assessment — at no cost to you.</p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <a href="tel:0114848177" className="inline-flex items-center gap-2 bg-[#FFD700] hover:bg-[#FFD700]/80 text-[#1A1A1B] px-6 py-3 rounded-lg font-bold transition-colors">
+                        <a href="tel:+15551234567" className="inline-flex items-center gap-2 bg-[#FFD700] hover:bg-[#FFD700]/80 text-[#1A1A1B] px-6 py-3 rounded-lg font-bold transition-colors">
                             <Phone className="h-5 w-5" /> Call Now
                         </a>
                         <Link to="/inquiries" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg font-bold transition-colors border border-[#FFD700]/40">
